@@ -1,0 +1,63 @@
+@import url('./variables.css');
+
+body {
+    font-family: var(--body-font);
+    font-weight: 400;
+}
+
+.banner {
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 5% 55% 40%;
+    background-image: var(--background-image);
+    background-size: cover;
+}
+
+.pink-col {
+    background-color: var(--red-banner-left);
+    display: flex;
+}
+
+.content-col {
+    background: linear-gradient(90deg, var(--red-banner-middle) 0%, var(--red-banner-right) 100%);
+    padding: 72px 80px;
+    color: var(--red-banner-content-color);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 515px;        
+}
+
+.post-title {
+    font-family: var(--heading-font);
+    font-size: 8rem;
+    font-weight: inherit;
+    margin: 0;
+}
+
+.outlined-button {
+    background-color: var(--red-banner-content-color);
+    border: 1px solid var(--rock-trust-black);
+    border-radius: 4px;
+    width: 140px;
+    height: 40px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1100px) {
+    .banner {
+        grid-template-columns: 0% 0% 100%;
+        min-height: 500px;
+    }
+
+    .content-col {
+        background: linear-gradient(90deg, var(--red-banner-left) 0%, var(--red-banner-right) 100%);
+        padding: 95px 45px;
+        min-width: 300px;
+    }
+
+    .post-title {
+        font-size: 5.33rem;
+    }
+}

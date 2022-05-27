@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&family=Poppins&family=Roboto:wght@400;500&display=swap');
+@font-face {
+    font-family: The Friday Stroke;
+    src: url("./assets/fonts/The Friday Stroke 400.otf") format("opentype")
+}
+
+:root {
+    font-size: 12px;
+
+    --red-banner-left: rgba(244, 39, 77, 0.9);
+    --red-banner-middle: rgba(247, 107, 45, 0.9);
+    --red-banner-right: rgba(255,187,0, 0.9);
+    --red-banner-content-color: #FFFFFF;
+
+    --background-image: url('https://www.mungos.org/app/uploads/2020/10/Banner-pic-outreach-1-1716x560.png');
+
+    --rock-trust-black: #1C1F2A;
+
+    --body-font: "Hind Siliguri";
+    --heading-font: "The Friday Stroke";
+}
